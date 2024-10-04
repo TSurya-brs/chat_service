@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/3da1a747b2.js"></script>
+    <title>Chat</title>
+    <link rel="icon" href="http://203.193.173.125/buildriseshine/favicon.png" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/style1.css" />
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.7.2.2.min.js"></script>
+</head>
+<body>
+    <main role="main" class="container pt-5">
+        <div id="name-prompt" class="card mx-auto" style="width: 400px; height:200px;">
+            <div class="card-header text-start">
+                <h2>Please Enter Your Name</h2>
+            </div>
+            <div class="card-body text-center">
+                <input type="text" id="username-input" class="form-control mb-2" placeholder="Enter your name" style="width: 80%; margin: auto;" />
+                <button id="start-chat" class="btn btn-primary">Start Chat</button>
+            </div>
+        </div>
+
+        <div id="chat-box" class="card mx-auto" style="width: 400px;  display: none;"> 
+            <div class="card-header text-start" id="user"><h2>Chat Box</h2></div>
+            <div id="messages" class="messages-div w-100 overflow-auto"></div>
+            <div class="form-groups position-absolute" style="bottom: 0; width: 100%;">
+                <form action="javascript:void(0);" id="input-form">
+                    <div class="input-group">
+                        <input id="message" type="text" placeholder="Enter Message" class="form-control" />
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js" defer></script>
+</body>
+</html>
